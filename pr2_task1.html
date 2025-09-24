@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота</title>
+</head>
+<body>
+    <header>
+        <h1>Завдання 1</h1>
+      <style>
+        fieldset {
+            width: 300px;
+            padding: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 3px;
+        }
+        .required {
+            color: red;
+        }
+      </style>
+</body>
+<form>
+    <fieldset>
+        <legend>Персональна інформація</legend>
+
+        <label for="name">Name<span class="required">*</span></label>
+        <input type="text" id="name" name="name" placeholder="your name" required>
+
+        <label> for="email">Email<span class="required">*</span></label>
+        <input type="text" id="email" email="email" placeholder="your email" required>
+        
+    </fieldset>
+</form>
+</html>
