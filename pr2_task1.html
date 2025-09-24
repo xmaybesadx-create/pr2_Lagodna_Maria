@@ -41,6 +41,11 @@
             margin-top: 5px;  
         }
 
+         .checkbox-label input[type="checkbox"] {
+            width: auto;  /* Без розстягування */
+            margin: 0;
+        }
+
       </style>
 </head>
 <body>
@@ -67,15 +72,15 @@
         <input type="radio" name="gender" id="male" value="male" required>
             Чоловік
         </label>
-        
+
         <label class="radio-label">
         <input type="radio" name="gender" id="female" value="female">
             Жінка
         </label>
 
 
-
-        <label class="checkbox-label">Поточний статус
+        <p>Поточний статус</p>
+        <label class="checkbox-label">
         <input type="checkbox" name="current_status" id="student">
             Студент
         </label>
