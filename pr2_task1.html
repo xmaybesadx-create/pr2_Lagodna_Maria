@@ -32,6 +32,13 @@
              margin-top: 5px;     
         }
 
+        .checkbox-label {
+            display: flex;
+            align-items: center; 
+            gap: 5px;            
+            margin-top: 5px;  
+        }
+
       </style>
 </body>
 <form>
@@ -47,14 +54,33 @@
     <fieldset>
         <legend>Додаткова інформація</legend>
 
-        <label for="gender">Gender<span class="required">*</span>
+
+        <label for="gender">Стать<span class="required">*</span>
             <input type="radio" name="gender" id="male" required>
             Чоловік
         </label>
         <label>
-            <input type="radio" name="gender" id="female" required>
+            <input type="radio" name="gender" id="female">
             Жінка
         </label>
+
+
+        <label for="gender">Поточний статус
+        <input type="checkbox" name="current_status" id="student">
+            Студент
+        </label>
+
+        <label>
+        <input type="checkbox" name="current_status" id="worker">
+            Працівник
+        </label>
+
+        <label>
+        <input type="checkbox" name="current_status" id="workless">
+            Безробітній
+        </label>
+
+
     </fieldset>
 </form>
 </html>
