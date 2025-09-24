@@ -96,6 +96,46 @@
         </label>
 
 
+         <label for="date">Дата народження<span class="required">*</span></label>
+         <input type="date" id="birthdate" name="birthdate" required>
+
+          <label for="birthdate">Дата народження<span class="required">*</span></label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="skills">Навички та технології<span class="required">*</span></label>
+            <select id="skills" name="skills" multiple size="6" required>
+                <optgroup label="Tech skills">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>ASP.NET</option>
+                </optgroup>
+                <optgroup label="Soft skills">
+                    <option>Тайм-менеджмент</option>
+                    <option>Командна робота</option>
+                    <option>Лідерство</option>
+                </optgroup>
+            </select>
+
+            <label for="experience">Досвід (в роках)</label>
+            <select id="experience" name="experience">
+                <option value="0.5">0,5</option>
+                <option value="1">1</option>
+                <option value="1.5">1,5</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="5">5+</option>
+            </select> років
+
+            <label for="photo">Фотографія</label>
+            <input type="file" id="photo" name="photo">
+
+            <label for="comment">Коментарій</label>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+        </fieldset>
+
+        <button type="submit">Відправити</button>
+        <button type="reset">Скинути</button>
     </fieldset>
 </form>
 </html>
